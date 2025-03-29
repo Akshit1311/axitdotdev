@@ -13,11 +13,11 @@ const TechPill = ({ tech }: Props) => {
 		>
 			<span className="m-1 bg-zinc-900 rounded-full">
 				<Image
-					src={`/assets/icons/${tech}.png`}
+					src={`/assets/icons/tech/${tech}.png`}
 					alt={"rust"}
 					width={25}
 					height={25}
-					className="rounded-full"
+					className="rounded-full min-w-6"
 				/>
 			</span>
 			<span className="pr-2 text-sm mx-1 capitalize">{tech}</span>
