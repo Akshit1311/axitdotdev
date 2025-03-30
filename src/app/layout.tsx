@@ -7,6 +7,7 @@ import { Space_Mono } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { cn } from "~/lib/utils";
+import Navbar from "./_components/Navbar";
 
 export const metadata: Metadata = {
 	title: "Create T3 App",
@@ -31,10 +32,12 @@ export default function RootLayout({
 			className={cn(
 				`${GeistSans.variable}`,
 				spaceMono.variable,
-				"bg-gradient-to-br from-zinc-900 to-zinc-800 text-white ",
+				"bg-gradient-to-br from-zinc-900 to-zinc-800 text-white min-h-screen",
 			)}
 		>
-			<body className="md:max-w-[800px] md:min-w-[600px] mx-auto font-spaceMono">
+			<body className="md:max-w-[900px] md:min-w-[600px] mx-auto font-spaceMono">
+				<Navbar />
+
 				<TRPCReactProvider>{children}</TRPCReactProvider>
 			</body>
 		</html>

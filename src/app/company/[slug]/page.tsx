@@ -16,7 +16,7 @@ export default async function Page({
 	console.log({ slug });
 
 	return (
-		<div className="mx-auto">
+		<div className="mx-auto pt-4">
 			<WorkExpPage companyKey={slug as TCompany} />
 		</div>
 	);

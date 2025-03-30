@@ -2,7 +2,7 @@ import React from "react";
 import SectionLayout from "../_components/SectionLayout";
 
 const Talks = () => {
-	const controls = "?autoplay=1&controls=0";
+	const controls = "?controls=0";
 	const talks = [
 		{
 			title: "DePIN: Pushing Decentralization Beyond Blockchain",

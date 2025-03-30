@@ -34,36 +34,37 @@ const WorkExpPage = ({ companyKey }: Props) => {
 				<ul className="list-disc list-inside">
 					<div className="text-sm mt-2">{company.description}</div>
 
-					<h3 className="text-sm mt-2 font-semibold">Projects</h3>
-					{company.projects.map((project) => (
-						<li key={project.title} className="my-2">
-							<Link
-								key={project.title}
-								className="text-sm underline hover:opacity-75"
-								href={`/project/${project.link}`}
-							>
-								{project.title}
+					<h3 className="text-sm mt-4 font-semibold mb-2">Projects</h3>
 
-								<svg
-									className="inline-block h-3 w-3 ml-1"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth="1.5"
-									viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg"
-									aria-hidden="true"
-								>
-									<path
-										d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-										strokeLinecap="round"
-										strokeLinejoin="round"
-									/>
-								</svg>
-							</Link>
+					<div className="md:grid grid-cols-3 gap-4">
+						{company.projects.map((project) => (
+							<div key={project.title} className="bg-zinc-900 p-3 rounded-lg">
+								<Image
+									src={`/assets/projects/${project.img}`}
+									width={5088}
+									height={3434}
+									alt={project.title}
+									className="rounded-lg"
+								/>
 
-							<div className="ml-6">{project.description}</div>
-						</li>
-					))}
+								<div className="text-sm my-2">{project.title}</div>
+
+								<div className="flex flex-wrap items-center gap-2">
+									{project.tech.map((tech) => (
+										<Image
+											title={tech}
+											key={tech}
+											alt={tech}
+											height={23}
+											width={23}
+											src={`/assets/icons/tech/${tech}.png`}
+											className="cursor-pointer rounded-sm "
+										/>
+									))}
+								</div>
+							</div>
+						))}
+					</div>
 				</ul>
 			</div>
 		</SectionLayout>

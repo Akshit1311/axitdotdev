@@ -12,8 +12,6 @@ export default async function Home() {
 
 	return (
 		<HydrateClient>
-			<Navbar />
-
 			<div className="flex items-center gap-3 px-4 mt-24">
 				<div className="relative w-16 h-16 group">
 					{/* Front Image */}
