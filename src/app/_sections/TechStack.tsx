@@ -7,7 +7,9 @@ const TechStack = () => {
 		<SectionLayout title="Tech Stack">
 			<div className="flex gap-2 flex-wrap">
 				<TechPill tech="rust" />
+				<TechPill tech="webrtc" />
 				<TechPill tech="typescript" />
+				<TechPill tech="postgres" />
 				<TechPill tech="next" />
 				<TechPill tech="tailwind" />
 			</div>
