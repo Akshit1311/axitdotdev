@@ -8,7 +8,7 @@ import { Space_Mono } from "next/font/google";
 import { TRPCReactProvider } from "~/trpc/react";
 import { cn } from "~/lib/utils";
 import { BackgroundBeams } from "./_components/aceternity/bg-beams";
-// import Navbar from "./_components/Navbar";
+import Navbar from "./_components/Navbar";
 
 export const metadata: Metadata = {
 	title: "Akshit Gupta",
@@ -36,8 +36,8 @@ export default function RootLayout({
 				"bg-gradient-to-br from-zinc-900 to-zinc-800 text-white min-h-screen",
 			)}
 		>
-			<body className="md:max-w-[900px] md:min-w-[600px] mx-auto font-spaceMono mt-8">
-				{/* <Navbar /> */}
+			<body className="md:max-w-[900px] md:min-w-[600px] mx-auto font-spaceMono">
+				<Navbar />
 
 				<TRPCReactProvider>{children}</TRPCReactProvider>
 
