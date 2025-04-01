@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
 	return (
-		<header className=" rounded-2xl mt-3 flex items-center justify-between px-4 py-3 text-xs fixed top-0 left-1/2 -translate-x-1/2  z-50 bg-zinc-300/10 backdrop-blur-md">
+		<header className="rounded-2xl my-3 flex items-center justify-between px-4 py-3 text-xs sticky top-2 mx-auto w-fit  z-50 bg-zinc-300/10 backdrop-blur-md">
 			<nav className="flex items-center gap-4">
 				<Link className="text-zinc-200" href="/">
 					Home

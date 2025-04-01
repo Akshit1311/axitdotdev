@@ -1,4 +1,4 @@
-import { api, HydrateClient } from "~/trpc/server";
+import { HydrateClient } from "~/trpc/server";
 import Navbar from "./_components/Navbar";
 import Image from "next/image";
 import Socials from "./_sections/Socials";
@@ -6,13 +6,13 @@ import Talks from "./_sections/Talks";
 import TechStack from "./_sections/TechStack";
 import WorkExp from "./_sections/WorkExp";
 export default async function Home() {
-	const hello = await api.post.hello({ text: "from tRPC" });
+	// const hello = await api.post.hello({ text: "from tRPC" });
 
-	void api.post.getLatest.prefetch();
+	// void api.post.getLatest.prefetch();
 
 	return (
 		<HydrateClient>
-			<div className="flex items-center gap-3 px-4 mt-24">
+			<div className="flex items-center gap-3 px-4 mt-6 pb-12">
 				<div className="relative w-16 h-16 group">
 					{/* Front Image */}
 					<Image
@@ -33,10 +33,11 @@ export default async function Home() {
 				</div>
 
 				<div className="flex flex-col justify-between">
-					<div className="">Akshit Gupta</div>
-					<div className="text-sm text-zinc-400">Full Stack Engineer</div>
+					<div className="text-xl">Akshit Gupta</div>
+					<div className="text-md text-zinc-400">Full Stack Engineer</div>
 				</div>
 			</div>
+
 			<Socials />
 
 			<TechStack />

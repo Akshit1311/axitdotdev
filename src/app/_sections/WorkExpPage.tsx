@@ -33,44 +33,48 @@ const WorkExpPage = ({ companyKey }: Props) => {
 					</div>
 				</div>
 
-				<div className="overflow-hidden">
-					<h3 className="text-sm mt-4 font-semibold mb-2">Projects</h3>
-					<div className="overflow-scroll py-4">
-						<div className="flex gap-4 md:w-screen">
-							{company.projects.map((project) => (
-								<div key={project.title} className="bg-zinc-900 p-3 rounded-lg">
-									<div className="w-[300px] md:w-auto">
-										<Image
-											src={`/assets/projects/${project.img}`}
-											width={5088}
-											height={3434}
-											alt={project.title}
-											className="rounded-lg"
-										/>
-									</div>
-
-									<div className="text-sm my-2">{project.title}</div>
-
-									<div className="flex flex-wrap items-center gap-2">
-										{project.tech.map((tech) => (
+				{company.projects[0] && (
+					<div className="overflow-hidden">
+						<h3 className="text-sm mt-4 font-semibold mb-2">Projects</h3>
+						<div className="overflow-scroll py-4">
+							<div className="flex gap-4 w-fit">
+								{company.projects.map((project) => (
+									<div
+										key={project.title}
+										className="bg-zinc-900 p-3 rounded-lg min-w-[350px] max-w-[400px]"
+									>
+										<div className="w-[300px] md:w-auto">
 											<Image
-												title={tech}
-												key={tech}
-												alt={tech}
-												height={23}
-												width={23}
-												src={`/assets/icons/tech/${tech}.png`}
-												className="cursor-pointer rounded-sm "
+												src={`/assets/projects/${project.img}`}
+												width={5088}
+												height={3434}
+												alt={project.title}
+												className="rounded-lg"
 											/>
-										))}
+										</div>
+
+										<div className="text-sm my-2">{project.title}</div>
+
+										<div className="flex flex-wrap items-center gap-2">
+											{project.tech.map((tech) => (
+												<Image
+													title={tech}
+													key={tech}
+													alt={tech}
+													height={23}
+													width={23}
+													src={`/assets/icons/tech/${tech}.png`}
+													className="cursor-pointer rounded-sm "
+												/>
+											))}
+										</div>
 									</div>
-								</div>
-							))}
+								))}
+							</div>
 						</div>
 					</div>
-
-					<div className="text-sm mt-2">{company.description}</div>
-				</div>
+				)}
+				<div className="text-sm ">{company.description}</div>
 			</div>
 		</SectionLayout>
 	);

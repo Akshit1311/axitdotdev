@@ -35,8 +35,8 @@ export default function RootLayout({
 				"bg-gradient-to-br from-zinc-900 to-zinc-800 text-white min-h-screen",
 			)}
 		>
-			<body className="md:max-w-[900px] md:min-w-[600px] mx-auto font-spaceMono">
-				<Navbar />
+			<body className="md:max-w-[900px] md:min-w-[600px] mx-auto font-spaceMono mt-8">
+				{/* <Navbar /> */}
 
 				<TRPCReactProvider>{children}</TRPCReactProvider>
 			</body>

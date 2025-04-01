@@ -3,15 +3,22 @@ import SectionLayout from "../_components/SectionLayout";
 import TechPill from "../_components/TechStack/TechPill";
 
 const TechStack = () => {
+	const techStack = [
+		// "rust",
+		"webrtc",
+		"solidity",
+		"typescript",
+		"postgres",
+		"next",
+		"tailwind",
+	];
+
 	return (
 		<SectionLayout title="Tech Stack">
 			<div className="flex gap-2 flex-wrap">
-				<TechPill tech="rust" />
-				<TechPill tech="webrtc" />
-				<TechPill tech="typescript" />
-				<TechPill tech="postgres" />
-				<TechPill tech="next" />
-				<TechPill tech="tailwind" />
+				{techStack.map((tech) => (
+					<TechPill key={tech} tech={tech} />
+				))}
 			</div>
 		</SectionLayout>
 	);

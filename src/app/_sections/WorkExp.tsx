@@ -14,13 +14,13 @@ const WorkExp = () => {
 						key={key}
 						className="flex flex-col mb-4 gap-4 hover:opacity-75"
 					>
-						<div className=" flex gap-2 ">
+						<div className="flex gap-1">
 							<div className="min-w-16">
 								<Image
 									alt="huddle01"
 									src={`/assets/icons/companies/${company.imgName}`}
-									height={70}
-									width={70}
+									height={60}
+									width={60}
 									className="rounded-lg"
 								/>
 							</div>
@@ -44,6 +44,7 @@ const WorkExp = () => {
 										/>
 									</svg>
 								</div>
+								<div className="text-sm text-slate-300">{company.jobType}</div>
 								<div className="text-sm text-slate-300">{company.duration}</div>
 								<div className="text-sm text-slate-300">{company.role}</div>
 							</div>
