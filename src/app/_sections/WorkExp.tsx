@@ -7,7 +7,7 @@ import Link from "next/link";
 const WorkExp = () => {
 	return (
 		<SectionLayout title="Experience">
-			<div className="md:flex gap-4">
+			<div className="md:flex justify-between">
 				{Object.entries(COMPANIES).map(([key, company]) => (
 					<Link
 						href={`/company/${key}`}
