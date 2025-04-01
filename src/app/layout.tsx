@@ -39,6 +39,8 @@ export default function RootLayout({
 				{/* <Navbar /> */}
 
 				<TRPCReactProvider>{children}</TRPCReactProvider>
+
+				<div className="text-center my-4">Built with 💙 by axit</div>
 			</body>
 		</html>
 	);

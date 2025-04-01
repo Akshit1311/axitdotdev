@@ -12,11 +12,20 @@ const TechStack = () => {
 		"next",
 		"tailwind",
 	];
+	const otherSkills = ["claude", "gpt", "aws", "python", "cloudflare", "move"];
 
 	return (
 		<SectionLayout title="Tech Stack">
+			<div className="mb-4">Area of expertise: </div>
+
 			<div className="flex gap-2 flex-wrap">
 				{techStack.map((tech) => (
+					<TechPill key={tech} tech={tech} />
+				))}
+			</div>
+			<div className="my-4">Other Skills & Tech: </div>
+			<div className="flex gap-2 flex-wrap">
+				{otherSkills.map((tech) => (
 					<TechPill key={tech} tech={tech} />
 				))}
 			</div>

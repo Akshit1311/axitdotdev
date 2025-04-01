@@ -41,6 +41,7 @@ const Socials = () => {
 							href={social.href}
 							aria-label={social.name}
 							className="text-slate-300 hover:text-slate-100 flex w-fit items-center"
+							target="_blank"
 						>
 							{social.handle}
 							<svg

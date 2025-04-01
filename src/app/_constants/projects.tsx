@@ -106,7 +106,7 @@ export const COMPANIES = {
 		projects: [
 			{
 				title: "Meeting Product",
-				link: "/huddle-meet",
+				link: "https://huddle01.app",
 				img: "huddle-meet/cover.png",
 				tech: [
 					"typescript",
@@ -141,27 +141,28 @@ export const COMPANIES = {
 			},
 			{
 				title: "RTC SDKs",
-				link: "/sdk",
+				link: "https://www.npmjs.com/package/@huddle01/react",
 				img: "sdk/cover.png",
 				tech: ["typescript", "react", "mediasoup", "webrtc"],
 				description: <div>helelo</div>,
 			},
 			{
 				title: "Network Dashboard",
-				link: "/network-dashboard",
+				link: "https://huddle01.network",
 				tech: ["hardhat", "solidity", "trpc", "typescript", "next", "tailwind"],
 				img: "network-dashboard/cover.png",
 				description: <div>helelo</div>,
 			},
 			{
 				title: "Media Node Sale",
-				link: "/node-sale",
+				link: "",
 				tech: ["hardhat", "solidity", "trpc", "typescript", "next", "tailwind"],
 				img: "node-sale/cover.png",
 				description: <div>helelo</div>,
 			},
 			{
 				title: "Huddleverse - Quests Platform",
+				link: "https://huddleverse.vercel.app",
 				tech: [
 					"hardhat",
 					"solidity",
@@ -171,7 +172,6 @@ export const COMPANIES = {
 					"next",
 					"tailwind",
 				],
-				link: "/huddleverse",
 				img: "huddleverse/cover.png",
 				description: <div>helelo</div>,
 			},
@@ -262,7 +262,7 @@ export const COMPANIES = {
 		projects: [
 			{
 				title: "Swift Lend",
-				link: "/swift-lend",
+				link: "",
 				img: "swift-lend/cover.png",
 				tech: ["hardhat", "solidity", "typescript", "next", "tailwind"],
 				description: (
