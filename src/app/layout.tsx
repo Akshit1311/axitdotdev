@@ -7,6 +7,7 @@ import { Space_Mono } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { cn } from "~/lib/utils";
+import { BackgroundBeams } from "./_components/aceternity/bg-beams";
 // import Navbar from "./_components/Navbar";
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({
 				<TRPCReactProvider>{children}</TRPCReactProvider>
 
 				<div className="text-center my-4">Built with 💙 by axit</div>
+				<BackgroundBeams className="-z-10" />
 			</body>
 		</html>
 	);
