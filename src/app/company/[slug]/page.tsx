@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { COMPANIES, PROJECTS, type TCompany } from "~/app/_constants/projects";
+import { COMPANIES, type TCompany } from "~/app/_constants/projects";
 import WorkExpPage from "~/app/_sections/WorkExpPage";
 
 export default async function Page({
