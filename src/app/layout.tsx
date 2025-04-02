@@ -24,6 +24,8 @@ const spaceMono = Space_Mono({
 	variable: "--font-spaceMono",
 });
 
+export const dynamicParams = false;
+
 export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
