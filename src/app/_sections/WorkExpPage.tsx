@@ -48,8 +48,8 @@ const WorkExpPage = ({ companyKey }: Props) => {
 										<div className="group relative w-[300px] md:w-auto">
 											<Image
 												src={`/assets/projects/${project.img}`}
-												width={5088}
-												height={3434}
+												width={508}
+												height={343}
 												alt={project.title}
 												className="rounded-lg"
 											/>
