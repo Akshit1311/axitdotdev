@@ -38,7 +38,15 @@ const WorkExpPage = ({ companyKey }: Props) => {
 				{company.projects[0] && (
 					<div className="overflow-hidden">
 						<h3 className="text-sm mt-4 font-semibold mb-2">Projects</h3>
-						<div className="overflow-scroll py-4">
+						<div
+							className="overflow-x-scroll py-4 [&::-webkit-scrollbar]:w-[2px]
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+						>
 							<div className="flex gap-4 w-fit">
 								{company.projects.map((project) => (
 									<div

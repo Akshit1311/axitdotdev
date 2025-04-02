@@ -32,7 +32,15 @@ const Talks = () => {
 
 	return (
 		<SectionLayout title="Talks & Workshops">
-			<div className="overflow-x-auto">
+			<div
+				className="overflow-x-auto [&::-webkit-scrollbar]:w-[2px]
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+			>
 				<div className="flex w-fit gap-4 pb-4">
 					{talks.map((talk) => (
 						<div key={talk.title} className="flex flex-col gap-2 ">
