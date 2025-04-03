@@ -39,7 +39,7 @@ const WorkExpPage = ({ companyKey }: Props) => {
 					<div className="overflow-hidden">
 						<h3 className="text-sm mt-4 font-semibold mb-2">Projects</h3>
 						<div
-							className="overflow-x-scroll py-4 [&::-webkit-scrollbar]:w-[2px]
+							className="overflow-x-auto py-4 [&::-webkit-scrollbar]:w-[2px]
   [&::-webkit-scrollbar-track]:rounded-full
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:rounded-full
