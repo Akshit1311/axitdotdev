@@ -11,6 +11,9 @@ const TechStack = () => {
 		"postgres",
 		"next",
 		"tailwind",
+		"docker",
+		"grafana",
+		"prometheus",
 	];
 	const otherSkills = ["claude", "gpt", "aws", "python", "cloudflare", "move"];
 
