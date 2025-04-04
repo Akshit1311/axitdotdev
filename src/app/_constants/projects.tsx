@@ -49,6 +49,12 @@ export const COMPANIES = {
 				<div className="mt-4">Skills Acquired: </div>
 				<ul className="list-disc list-inside ">
 					<li>
+						Build a full stack app using&nbsp;
+						<span className="font-semibold  underline">
+							NextJS, Typescript, tRPC & TailwindCSS
+						</span>
+					</li>
+					<li>
 						Great understanding of how the networking stack works.&nbsp;
 						<span className="font-semibold  underline">
 							i.e WebRTC, Sockets, UDP, Holepunching, SFUs
