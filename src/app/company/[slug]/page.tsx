@@ -21,3 +21,11 @@ export default async function Page({
 		</div>
 	);
 }
+
+export async function generateStaticParams() {
+	const paths = Object.keys(COMPANIES).map((company) => ({
+		slug: company,
+	}));
+
+	return paths;
+}
