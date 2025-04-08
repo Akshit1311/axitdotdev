@@ -1,4 +1,5 @@
 import "~/styles/globals.css";
+import { ViewTransitions } from "next-view-transitions";
 
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
@@ -30,22 +31,24 @@ export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html
-			lang="en"
-			className={cn(
-				`${GeistSans.variable}`,
-				spaceMono.variable,
-				"bg-gradient-to-br from-zinc-900 to-zinc-800 text-white min-h-screen",
-			)}
-		>
-			<body className="md:max-w-[900px] md:min-w-[600px] mx-auto font-spaceMono">
-				<Navbar />
+		<ViewTransitions>
+			<html
+				lang="en"
+				className={cn(
+					`${GeistSans.variable}`,
+					spaceMono.variable,
+					"bg-gradient-to-br from-zinc-900 to-zinc-800 text-white min-h-screen",
+				)}
+			>
+				<body className="md:max-w-[900px] md:min-w-[600px] mx-auto font-spaceMono">
+					<Navbar />
 
-				<TRPCReactProvider>{children}</TRPCReactProvider>
+					<TRPCReactProvider>{children}</TRPCReactProvider>
 
-				<div className="text-center my-4">Built with 💙 by axit</div>
-				<BackgroundBeams className="-z-10" />
-			</body>
-		</html>
+					<div className="text-center my-4">Built with 💙 by axit</div>
+					<BackgroundBeams className="-z-10" />
+				</body>
+			</html>
+		</ViewTransitions>
 	);
 }

@@ -3,7 +3,7 @@
 import React from "react";
 import SectionLayout from "../_components/SectionLayout";
 import { COMPANIES, type TCompany } from "../_constants/projects";
-import Link from "next/link";
+
 import Image from "next/image";
 
 type Props = {

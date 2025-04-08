@@ -2,7 +2,7 @@ import React from "react";
 import SectionLayout from "../_components/SectionLayout";
 import { COMPANIES } from "../_constants/projects";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 const WorkExp = () => {
 	return (
