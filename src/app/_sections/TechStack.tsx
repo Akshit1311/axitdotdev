@@ -4,7 +4,7 @@ import TechPill from "../_components/TechStack/TechPill";
 
 const TechStack = () => {
 	const techStack = [
-		// "rust",
+		"rust",
 		"webrtc",
 		"solidity",
 		"typescript",
