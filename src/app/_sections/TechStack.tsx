@@ -10,6 +10,7 @@ const TechStack = () => {
 		"typescript",
 		"postgres",
 		"next",
+		"react",
 		"tailwind",
 		"docker",
 		"grafana",
