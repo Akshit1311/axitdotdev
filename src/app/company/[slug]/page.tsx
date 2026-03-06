@@ -12,8 +12,14 @@ export async function generateMetadata({
 
   if (slug === "huddle") {
     return {
+      title: "Huddle01 - Engineering Lead at People-Powered Communication",
+      description:
+        "Akshit Gupta's experience as Engineering Lead at Huddle01, building real-time communication infrastructure with WebRTC and decentralized tech.",
       openGraph: {
-        images: ["/assets/og/huddle01.png"],
+        title: "Huddle01 - Engineering Lead at People-Powered Communication",
+        description:
+          "Akshit Gupta's experience as Engineering Lead at Huddle01, building real-time communication infrastructure with WebRTC and decentralized tech.",
+        images: ["/assets/og/huddle01-og.png"],
       },
     };
   }
@@ -31,8 +37,6 @@ export default async function Page({
   if (!Object.keys(COMPANIES).includes(slug)) {
     return redirect("/not-found");
   }
-
-  console.log({ slug });
 
   return (
     <div className="mx-auto">
