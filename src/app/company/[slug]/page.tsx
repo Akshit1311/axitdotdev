@@ -1,6 +1,25 @@
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { COMPANIES, type TCompany } from "~/app/_constants/projects";
 import WorkExpPage from "~/app/_sections/WorkExpPage";
+
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+	const { slug } = await params;
+
+	if (slug === "huddle") {
+		return {
+			openGraph: {
+				images: ["/assets/og/huddle01.png"],
+			},
+		};
+	}
+
+	return {};
+}
 
 export default async function Page({
 	params,
