@@ -12,9 +12,9 @@ import { BackgroundBeams } from "./_components/aceternity/bg-beams";
 import Navbar from "./_components/Navbar";
 
 export const metadata: Metadata = {
-	title: "Akshit Gupta",
-	description: "Guess who's portfolio?",
-	// icons: [{ rel: "icon", url: "/favicon.ico" }],
+	title: "Akshit Gupta | Full Stack Engineer & Software Developer",
+	description:
+		"Portfolio of Akshit Gupta — a Full Stack Engineer building modern web applications with React, Next.js, and TypeScript. Explore projects, work experience, and more.",
 };
 
 const spaceMono = Space_Mono({
