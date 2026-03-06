@@ -21,6 +21,13 @@ export async function generateMetadata({
           "Akshit Gupta's experience as Engineering Lead at Huddle01, building real-time communication infrastructure with WebRTC and decentralized tech.",
         images: ["/assets/og/huddle01-og.png"],
       },
+      twitter: {
+        card: "summary_large_image",
+        title: "Huddle01 - Engineering Lead at People-Powered Communication",
+        description:
+          "Akshit Gupta's experience as Engineering Lead at Huddle01, building real-time communication infrastructure with WebRTC and decentralized tech.",
+        images: ["/assets/og/huddle01-og.png"],
+      },
     };
   }
 
